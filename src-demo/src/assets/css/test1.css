@@ -1,0 +1,9 @@
+body {
+  padding: 40px;
+  background: url("../img/bj.jpg");
+  font-size: 40px;
+}
+body .lesson-name {
+  color: red;
+  font-size: 25px;
+}

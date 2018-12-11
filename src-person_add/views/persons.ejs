@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style></style>
+</head>
+<body>
+<h2>人员列表</h2>
+<ul>
+    <%
+    persons.forEach(p=>{
+    %>
+    <span><%=p.id%></span> &nbsp;&nbsp;
+    <span><%=p.name%></span>&nbsp;&nbsp;
+    <span><%=p.sex%></span>&nbsp;&nbsp;
+    <span><%=p.age%></span>&nbsp;&nbsp;
+    </li>
+    <%
+    })
+    %>
+</ul>
+<a href="/">继续添加</a>
+</body>
+</html>

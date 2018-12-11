@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style></style>
+</head>
+<body>
+<div id="test"></div>
+<script src="./js/react.development.js"></script>
+<script src="./js/react-dom.development.js"></script>
+<script src="./js/prop-types.js"></script>
+<script src="./js/babel.min.js"></script>
+<script type="text/babel">
+class Person extends React.Component{
+    render(){
+        const {name,sex,age}=this.props.person
+        return(
+            <ul>
+                <li>姓名:{name}</li>
+                <li>性别:{sex}</li>
+                <li>年龄:{age}</li>
+            </ul>
+        )
+    }
+}
+Person.propTypes={
+    name:PropTypes.string.isRequired,
+    sex:PropTypes.string,
+    age:PropTypes.number
+}
+Person.defaultProps={
+    sex:"女",
+    age:18
+}
+
+const p={
+    name:"wang",
+    sex:"男",
+    age:20
+}
+ReactDOM.render(<Person person={p}/>,document.getElementById("test"))
+</script>
+</body>
+</html>

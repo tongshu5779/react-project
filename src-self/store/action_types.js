@@ -1,0 +1,5 @@
+export const ADD_COMMENT = "add_comment"
+export const DELETE_COMMENT = "delete_comment"
+export const REQUESTING = "requesting"
+export const REQ_SUCCESS = "req_success"
+export const REQ_FAIL = "req_fail"

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style></style>
+</head>
+<body>
+<div id="test"></div>
+<script src="./js/react.development.js"></script>
+<script src="./js/react-dom.development.js"></script>
+<script src="./js/babel.min.js"></script>
+
+<!--<script type="text/babel">-->
+    <!--const vDom=<h1>hello</h1>-->
+    <!--ReactDOM.render(vDom,document.getElementById("test"))-->
+<!--</script>-->
+
+
+<!--<script type="text/babel">-->
+     <!--const names=["A","B","C","D"]-->
+     <!--const lis=names.map((name,index)=>{-->
+         <!--<li key={index}>name</li>-->
+     <!--})-->
+     <!--const vDom=(<ul>{lis}</ul>)-->
+     <!--ReactDOM.render(vDom,document.getElementById("test"))-->
+<!--</script>-->
+
+<!--<script type="text/babel">-->
+    <!--function MyComponent() {-->
+        <!--return <h2>定义组件</h2>-->
+    <!--}-->
+    <!--ReactDOM.render(<MyComponent/>,document.getElementById("test"))-->
+<!--</script>-->
+
+<script type="text/babel">
+    class Like extends React.Component{
+        constructor(props){
+            super(props)
+            this.state={
+                isLike:true
+            }
+        }
+    handleClick=()=>{
+        const isLike=!this.state.isLike
+        this.setState({
+            isLike
+        })
+    }
+    render(){
+        const {isLike}=this.state;
+        const text=isLike?"你喜欢我":"我喜欢你"
+        return <h1 onClick={this.handleClick}>{text}</h1>
+    }
+    }
+    ReactDOM.render(<Like/>,document.getElementById("test"))
+</script>
+</body>
+</html>

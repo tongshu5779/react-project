@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style></style>
+</head>
+<body>
+
+<div id="test"></div>
+<script src="./js/react.development.js"></script>
+<script src="./js/react-dom.development.js"></script>
+<script src="./js/prop-types.js"></script>
+<script src="./js/babel.min.js"></script>
+<script type="text/babel">
+class LoginForm extends React.Component{
+
+
+   render(){
+       return(
+           <form action="">
+               <label>
+                      用户名:
+                      <input type="text"/>
+               </label>
+               <label>
+                      密码:
+                      <input type="text"/>
+               </label>
+               <input type="submit"/>
+           </form>
+       )
+   }
+
+}
+ReactDOM.render(<LoginForm/>,document.getElementById("test"))
+
+
+</script>
+</body>
+</html>
