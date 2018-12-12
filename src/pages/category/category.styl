@@ -1,0 +1,70 @@
+@import "../../common/stylus/mixins.styl"
+.sortWrap
+  .sortPackage
+    width 100%
+    margin-bottom .97rem
+    .sortHeader
+      background-color white
+      width 7.5rem
+      height 0.88rem
+      padding 0 .3rem
+      display flex
+      align-items center
+      border-bottom 0.01rem #EDEDED solid
+      position fixed
+      left 0
+      top 0
+      z-index 100
+      .header
+        width 6.9rem
+        height 0.56rem
+        background-color #EDEDED
+        display flex
+        justify-content center
+        position relative
+    .menu-wrapper
+      width 1.62rem
+      height 12.46rem
+      position fixed
+      top 0.88rem
+      left 0
+      border-right 0.01rem #EDEDED solid
+      background-color white
+      .menuUL
+        width 1.62rem
+        height 12.19rem
+        padding-top 0.4rem
+        padding-bottom 1.38rem
+        .menu-item
+          width 1.62rem
+          height 0.5rem
+          margin-top 0.4rem
+          text-align center
+          &:first-child
+            margin-top 0
+          .text
+            font-size 0.28rem
+            display inline-block
+            width 1.62rem
+            height 0.5rem
+            line-height 0.5rem
+            &.active
+              color #ab2b2b
+              border-left 0.03rem #ab2b2b solid
+
+
+    .goods-wrapper
+      margin-top 0.88rem
+      width 5.28rem
+      padding 0.3rem .3rem .21rem .3rem
+      margin-left 1.62rem
+      background-color white
+      .list
+        width 5.28rem
+        display flex
+        flex-wrap wrap
+        .pic
+          width 5.28rem
+          height 1.92rem
+          margin-bottom .32rem
+          background-size 100% 100%
